@@ -5,7 +5,7 @@ global.client = new Discord.Client({
 })
 
 
-client.login("OTQ0OTU5NjMxMzg0NTM5MTg2.YhJMPA.x0wGKRUTUPVzyZLFElHcDtYRBMU");
+client.login(process.env.token);
 
 client.on("ready", () => {
     console.log("Bot ONLINE")
