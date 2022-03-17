@@ -1,0 +1,19 @@
+{
+  "name": "nuova-cartella-(4)",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord-canvas-easy": "^2.3.0",
+    "discord-math": "^1.0.5",
+    "discord.js": "^13.6.0",
+    "mongoose": "^6.2.5",
+    "simply-djs": "^2.5.2"
+  }
+}
