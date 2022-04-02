@@ -4,6 +4,12 @@ global.client = new Discord.Client({
     intents: 32767
 })
 
+const disbut = require("discord-buttons")
+disbut(client);
+
+const { MessageButton, MessageActionRow } = require("discord-buttons")
+const { MessageMenuOption, MessageMenu } = require("discord-buttons")
+
 
 client.login(process.env.token);
 
@@ -157,3 +163,43 @@ client.on("messageCreate", message => {
 
 
 
+//rate
+
+
+client.on("message", message => {
+    if (message.content == "KBMrate") {
+        var button1 = new MessageButton()
+            .setLabel("1")
+            .setStyle("blue")
+            .setID("Grazie per aver votato il server")
+        var button2 = new MessageButton()
+            .setLabel("2")
+            .setStyle("green")
+            .setID("Grazie per aver votato il server")
+        var button1 = new MessageButton()
+            .setLabel("3")
+            .setStyle("blue")
+            .setID("Grazie per aver votato il server")
+        var button1 = new MessageButton()
+            .setLabel("4")
+            .setStyle("blue")
+            .setID("Grazie per aver votato il server")
+        var button1 = new MessageButton()
+            .setLabel("5")
+            .setStyle("blue")
+            .setID("Grazie per aver votato il server")
+
+        var row = new MessageActionRow()
+            .addComponent(button1)
+            .addComponent(button2)
+            .addComponent(button3)
+            .addComponent(button4)
+            .addComponent(button5)
+
+        var embed = new Discord.MessageEmbed()
+            .setTitle("Vota")
+            .setDescription("Vota il server")
+
+        message.channel.send(embed, row)
+    }}
+)
