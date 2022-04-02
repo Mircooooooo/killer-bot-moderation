@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "discord-buttons": "^4.0.0-deprecated",
     "discord-canvas-easy": "^2.3.0",
     "discord-math": "^1.0.5",
     "discord.js": "^13.6.0",
