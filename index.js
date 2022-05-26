@@ -163,6 +163,9 @@ client.on("messageCreate", message => {
 
 
 
+<<<<<<< HEAD
 //rate
 
 
+=======
+>>>>>>> 782019faa4e99ef6d1ca09196aa3cf298a50850e
